@@ -1,0 +1,21 @@
+<template name="get_student">
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h4>Student List </h4>
+    </div>
+    <div class="panel-body">
+      <div class="container-fluid">
+        <ul class="list-inline ">
+          {{#each dbstudents}}
+          <li class="list-group-item" >
+            <div class="container-fluid"> 
+              <p class="card-title"> {{firstname}} <br /> {{lastname}} <br /> {{course}} <br /> {{gender}} 
+              </p>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
